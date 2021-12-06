@@ -1,0 +1,45 @@
+.heading
+{
+   
+    text-align: center;
+    width :fit-content;
+    color:white;
+    margin: auto;
+}
+
+nav 
+{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    
+}
+
+ul li
+{
+   display: inline;
+}
+
+#bars
+{
+    display: inline;
+}
+
+
+section
+{
+    margin-top: auto;
+    padding-top: 30px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: first baseline;
+    height: 100px ;
+}
+
+.bars_div
+{
+    background-color: blueviolet;
+    width: 10px;
+    display: inline-block;
+    
+}

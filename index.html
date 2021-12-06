@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SORTING VISUALIZER</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script type="text/javascript" src="js files/createarray.js"></script>
+    <link rel="stylesheet" href="sorting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float" rel="stylesheet">
+
+</head>
+
+<body id="full-body" class="bg-dark">
+
+    <div>
+        <div style="padding: 10px;">
+            <h1 class="heading">SORTING VISUALIZER</h1>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-xl navbar-light" style="position:static;height :max-content">
+                <div>
+
+                    <ul>
+                        <li>
+                            <button type="button" onclick="create_element()"
+                                class=" nav-item  btn btn-md btn-outline-primary new-array" data-toggle="button"
+                                aria-pressed="false" autocomplete="off">
+                                New Array</button>
+                        </li>
+                    </ul>
+                </div>
+                <div style="padding-left: 200px;">
+
+                    <ul style="padding-left: 200px; ">
+                        <li>
+                            <button type="button" onclick="insertionsort()" class="nav-item  btn btn-md btn-outline-danger sort insertion-sort"
+                                data-toggle="button" aria-pressed="false" autocomplete="off" id="insertion-sort">
+                                Insertion Sort</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="bubblesort()" class="nav-item  btn btn-md btn-outline-danger sort bubble-sort"
+                                data-toggle="button" aria-pressed="false" autocomplete="off" id="bubble-sort">
+                                Bubble Sort</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="selection_sort()"
+                                class="nav-item  btn btn-md btn-outline-danger sort selection-sort" data-toggle="button"
+                                aria-pressed="false" autocomplete="off" id="selection-sort">
+                                Selection Sort</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="quicksort()" class="nav-item  btn btn-md btn-outline-danger sort quick-sort"
+                                data-toggle="button" aria-pressed="false" autocomplete="off" id="quick-sort">
+                                Quick Sort</button>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div style="padding-left: 200px;">
+                   <label for="cars" style="color: chartreuse;border: chartreuse; border-style:solid;border-radius: 10px; border-width: 1px;">Choose a Number</label>
+
+                    <select  class="btn" name="Number" id="number" style="width: max-content;height:max-content ;">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select> 
+                    
+                </div>
+        </div>
+
+        </nav>
+
+        <div>
+            <section class="bars" id="bar_element">
+
+            </section>
+        </div>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
