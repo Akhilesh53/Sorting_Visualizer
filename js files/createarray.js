@@ -68,9 +68,9 @@ function getnum_value()
     num  = parseInt(id.value); 
 
     if(num == 10 || num == 20)
-    delay = 400;
+    delay = 250;
     else if(num==50)
-    delay = 300;
+    delay = 200;
     else
     delay = 150;
 
@@ -85,7 +85,6 @@ async function selection_sort()
     var is = document.getElementById('insertion-sort'); is.disabled = true;
     var bs = document.getElementById('bubble-sort'); bs.disabled = true;
     var qs = document.getElementById('quick-sort'); qs.disabled = true;
-   
     var n = document.getElementById('number'); n.disabled = true;
 
 
@@ -151,7 +150,6 @@ async function selection_sort()
         var is = document.getElementById('insertion-sort'); is.disabled = false;
         var bs = document.getElementById('bubble-sort'); bs.disabled = false;
         var qs = document.getElementById('quick-sort'); qs.disabled = false;
-        
         var n = document.getElementById('number'); n.disabled = false;
 }
 //========================= SELECTION SORT =================================//
@@ -253,7 +251,6 @@ async function quicksort()
   var is = document.getElementById('insertion-sort'); is.disabled = true;
   var bs = document.getElementById('bubble-sort'); bs.disabled = true;
   var ss = document.getElementById('selection-sort'); ss.disabled = true;
- 
   var n = document.getElementById('number'); n.disabled = true;
 
    bars = document.querySelectorAll(".bars_div");   
@@ -264,10 +261,9 @@ async function quicksort()
    bars[k].style.backgroundColor = "rgb(49, 226, 13)";
 
    var is = document.getElementById('insertion-sort'); is.disabled = false;
-  var bs = document.getElementById('bubble-sort'); bs.disabled = false;
-  var ss = document.getElementById('selection-sort'); ss.disabled = false;
-  
-  var n = document.getElementById('number'); n.disabled = false;
+   var bs = document.getElementById('bubble-sort'); bs.disabled = false;
+   var ss = document.getElementById('selection-sort'); ss.disabled = false;
+   var n = document.getElementById('number'); n.disabled = false;
 
 }
 //=========================== QUICK SORT ===================================//
